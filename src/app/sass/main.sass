@@ -38,12 +38,14 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	color: $black
+	background: #F8F9FC
 
 .img-responsive
 	display: block
@@ -57,7 +59,30 @@ body
 	background-color: $accent
 	color: #fff
 
+ul
+	margin: 0
+	padding: 0
+
 //Fonts
+
+
+.px16
+	font-size: 16px
+
+.px18
+	font-size: 18px
+
+.px21
+	font-size: 21px
+
+.px22
+	font-size: 22px
+
+.px35
+	font-size: 35px
+
+.uppercase
+	text-transform: uppercase
 
 .thin
 	font-family: proximaNova-thin
@@ -78,6 +103,104 @@ body
 
 .accent
 	color: $accent
+
+.dark
+	color: $black
+
+.gray
+	color: $gray
+
+.white
+	color: $white
+
+
+
+
+//header
+
+header
+	background: $darkBlue
+	padding: 5px
+	a:hover
+		color: $white
+		text-decoration: none
+
+	.personal-account 
+		margin: 10px 0
+		a
+			border-radius: 55px
+			border: 1px solid #000
+			padding: 10px 50px
+		a:hover
+			color: #000
+			text-decoration: none
+	.all-services
+		background: $accent
+
+//nav
+
+nav
+	background: $accent
+	padding: 5px 0
+	border-bottom: 5px solid #008600
+	li
+		list-style-type: none
+		margin: 10px 0
+	a
+		font-family: montserrat-medium
+		color: $white
+	a:hover
+		color: $white
+		text-decoration: none
+  
+//balance
+
+#balance
+	.current-discount
+		background: $ligthBlue
+		padding: 10px 26px 10px 26px
+		border-radius: 10px
+		margin: 20px 0 0 0
+		.title
+			line-height: 1.3
+			margin: 0 0 50px 0
+			padding: 10px 0 0 0
+	.discount-per-month
+		background: $lightGreen
+	.all-discount
+		background: $purple
+
+	.icon-discount
+		margin: 10px 0 0 0
+
+	.replenish-balance
+		margin: 20px
+		padding: 10px
+		border-radius: 10px
+		background: $white
+		.title
+			margin: 0  0 10px 0
+
+	.payment-method
+		margin: 5px
+		padding: 10px 5px
+		border: 1px solid #e4e9f8
+		border-radius: 5px
+		a
+			color: $black
+		a:hover
+			text-decoration: none
+		.title-method
+			text-align: center
+			line-height: 1
+		.icon
+			margin: 0 0 15px 0
+			img
+				height: 40px
+	.bankcard
+		
+	
+
 
 
 @import "media" // Всегда в конце

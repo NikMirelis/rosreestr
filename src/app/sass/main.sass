@@ -65,6 +65,8 @@ ul
 
 //Fonts
 
+.px8
+	font-size: 8px
 
 .px16
 	font-size: 16px
@@ -77,6 +79,9 @@ ul
 
 .px22
 	font-size: 22px
+
+.px33
+	font-size: 33px
 
 .px35
 	font-size: 35px
@@ -113,7 +118,14 @@ ul
 .white
 	color: $white
 
+.darkGreen
+	color: $darkGreen
 
+.green
+	color: $green
+
+.bg-white
+	color: $white
 
 
 //header
@@ -134,10 +146,88 @@ header
 		a:hover
 			color: #000
 			text-decoration: none
+		a::before
+			font-family: font-awesome
+			font-size: 18px
+			padding: 0 10px 0 0
+			content: '\f2be'
+
 	.all-services
 		background: $accent
 
+
 //nav
+
+
+//all-services
+
+#all-services
+	font-family: montserrat-medium
+	.mm-panel
+		background: $accent
+		color: $white
+	.mm-navbar
+		background: $accent
+		color: $white
+		border-bottom: 5px solid $green
+		.mm-navbar__title
+			font-family: montserrat-bold
+	.mm-listitem
+		color: $white
+	.mm-listitem:after
+		border-bottom: none
+
+//personal-info
+
+#personal-info
+	.mm-panel
+		background: $white
+		color: $white
+	.mm-navbar
+		border: none
+		background: $white
+		color: $white
+		.number-user
+			margin: 25px 0 10px 0
+		.balance-sum
+			margin: 0 0 20px 0px
+		.balance-sum-number
+			margin: 0 0 0 30px
+		.mm-navbar__title
+			justify-content: start
+	.mm-listitem:after
+		display: none
+	.mm-listitem
+		align-items: center
+		color: $black
+		height: 70px
+		a
+			font-size: 16px
+			font-family: proximaNova-semi-bold
+			padding: 0
+		a
+		&:nth-child(1)::before
+			font-family: font-awesome
+			margin: 0 25px 
+			content: url(../img/cash.svg)
+		&:nth-child(2)::before
+			font-family: font-awesome
+			margin: 0 25px 
+			content: url(../img/cash.svg)
+		&:nth-child(3)::before
+			font-family: font-awesome
+			margin: 0 25px 
+			content: url(../img/cash.svg)
+		&:nth-child(4)::before
+			font-family: font-awesome
+			margin: 0 25px 
+			content: url(../img/cash.svg)
+		&:nth-child(5)::before
+			font-family: font-awesome
+			margin: 0 25px 
+			content: url(../img/cash.svg)
+	.mm-listitem_selected
+		border-left: 5px solid $accent
 
 nav
 	background: $accent
@@ -174,7 +264,7 @@ nav
 		margin: 10px 0 0 0
 
 	.replenish-balance
-		margin: 20px
+		margin: 20px 0 0 0
 		padding: 10px
 		border-radius: 10px
 		background: $white
@@ -197,9 +287,47 @@ nav
 			margin: 0 0 15px 0
 			img
 				height: 40px
-	.bankcard
-		
-	
+	.your-amount
+		height: 70px
+		input
+			text-align: center
+			height: 100%
+			width: 100%
+			border: 1px solid #e4e9f8
+			border-radius: 5px
+	.price
+		height: 70px
+
+	.replenishment-amount
+		background: $white
+		margin: 10px 0 0 0
+		padding: 10px
+		border-radius: 10px
+		.sum
+			margin: 10px 0 0 0
+		.https-ssl
+			margin: 30px 50px 0 0
+			.icon-ssl i
+				font-family: font-awesome
+			.text-ssl
+				margin: 0px 0 0 5px
+	.replenish-button
+		margin: 10px 0 0 0
+		button
+			background: $accent
+			border: none
+			border-radius: 55px
+			padding: 15px 50px
+
+	.history
+		margin: 20px 0 0 0
+		padding: 10px
+		border-radius: 10px
+		background: $white
+		line-height: 1.1
+		.table
+			margin: 10px 0 0 0
+			text-align: center
 
 
 

@@ -66,6 +66,9 @@ ul
 a:hover
 	text-decoration: none
 
+.fa
+	font-family: font-awesome
+
 //Fonts
 
 .px8
@@ -91,6 +94,9 @@ a:hover
 
 .uppercase
 	text-transform: uppercase
+
+.underline
+	text-decoration: underline
 
 .thin
 	font-family: proximaNova-thin
@@ -187,6 +193,11 @@ header
 //personal-info
 
 #personal-info
+	.mm-listitem
+		transition: 0.3s
+	.mm-listitem:hover
+		border-right: 5px solid $accent
+		background: #e4e9f8
 	.mm-panel
 		background: $white
 		color: $white
@@ -357,6 +368,8 @@ nav
 			font-size: 8px
 			width: 95%
 			margin: 10px 0 0 15px
+			.row-table
+				margin: 50px 0 0 0
 			tr
 				margin: 5px 0 0 0
 			td
@@ -367,6 +380,45 @@ nav
 				td
 					border: none
 				
+//my-order
+
+#my-orders
+	.name-document
+		padding: 0 5px
+	.title
+		margin: 10px 0 0 0
+	.inwork
+		span::before
+			font-family: font-awesome
+			color: $gray
+			margin: 0 5px 0 0
+			content: "\f111"
+	.objects
+		display: flex
+		justify-content: space-between
+	.info
+		background: $white
+		padding: 20px
+		border-radius: 10px
+		margin: 15px 0 0 0 
+	table
+		width: 97%
+		margin: 0 0 0 5px
+		font-size: 8px
+		.row-tabl
+			margin: 10px 0 0 0
+		tr
+			padding: 10px 0
+			border-bottom: 1px solid #e4e9f8
+		.heading
+			border: none
+	.documents
+		background: $white
+		border-radius: 10px
+		padding: 10px
+		margin: 25px  0 0 0
+	.heading
+		font-size: 16px
 
 
 

@@ -14,7 +14,7 @@ $(function() {
  });
  $(document).ready(function() {
 	$("#personal-info").mmenu({
-		 extensions: ['wibescreen', 'effect-menu-slide', 'pagedim-black', "position-right"],
+		 extensions: ['wibescreen', 'effect-menu-slide', 'pagedim-black', "position-left"],
 		 navbar: {
 			 title: '<div class="number-user dark px18">+7 900 900 90 90</div><div class="balance-sum dark px16">Баланс: <span class="balance-sum-number bold px18">1200 р.</span></div>'
 		 }

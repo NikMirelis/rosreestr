@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>My-orders</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div id="my-page">
+		<div id="my-header">
+			<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-3">
+							<div class="logo d-flex justify-content-center align-self-center">
+								<a class="uppercase bold px21 white" href="/">Rosreestr.net</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-5 col-lg-4 offset-lg-2">
+							<div class="text-supp d-flex justify-content-center align-self-center">
+								<span class="px16 gray semibold">Тех поддержка: <a href="mailto:info@rosreestr.net">info@rosreestr.net</a></span>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3">
+							<div class="personal-account d-flex justify-content-center align-self-center">
+								<a class="white semibold px16" href="#personal-info">Личный кабинет</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<nav id="all-services-button">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="all-services d-lg-none">
+								<a href="#all-services">Все услуги</a>
+							</div>
+							<ul class="d-none d-lg-flex justify-content-between desctop-menu">
+								<li><a href="#">Выписка из ЕГРН</a></li>
+								<li><a href="#">Проверка участка</a></li>
+								<li><a href="#">Проверка квартиры</a></li>
+								<li><a href="#">Кадастровая стоимость</a></li>
+								<li><a href="#">Кадастровая карта</a></li>
+								<li><a href="#">Ответы на вопросы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			<nav id="all-services">
+				<ul class="">
+					<li class="d-flex justify-content-center">
+						<a href="#">Выписка из ЕГРН</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Проверка участка</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Проверка квартиры</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Кадастровая стоимость</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Кадастровая карта</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Ответы на вопросы</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav id="personal-info">
+				<ul class="">
+					<li class="d-flex justify-content-center">
+						<a href="/">Баланс</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Создать заказ</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="my-orders.html">Мои заказы</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Настройки</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Выход</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+		<div id="my-content">	
+			<section id="my-orders-status">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-6 col-md-3 col-lg-3">
+							<div class="title d-flex justify-content-between align-items-center">
+								<div class="number-order">
+									<span class="bold px22">Мои заказы</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 offset-md-5 col-lg-3 offset-lg-6">
+							<div class="search-input-orders">
+								<i class="fa fa-search gray" aria-hidden="true"></i>
+								<input type="search" maxlength="256" name="query" placeholder="Поиск..." id="search" required="">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="orders-status">
+								<div class="row">
+									<div class="col-12">
+										<table>
+											<tr class="row heading">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="gray semibold">№</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="gray semibold">Статус</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="gray semibold">Объекты</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="gray semibold">Документы</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start justify-content-md-end">
+														<span class="gray semibold">Стоимость</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="gray semibold">Дата</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="gray semibold">Изменён</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">01</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle green" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">1500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">10.10.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">10.10.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">03</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">04</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">05</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">06</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle green" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">200р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">12.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">12.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">07</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">08</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">09</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+											<tr class="row">
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">10</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class=""><i class="fa fa-circle gray" aria-hidden="true"></i></span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-center">
+														<span class="">2</span>
+													</div>
+												</td>
+												<td class="col-1">
+													<div class="d-flex justify-content-center">
+														<span class="">4</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-end justify-content-md-center">
+														<span class="">500р.</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+												<td class="col-2">
+													<div class="d-flex justify-content-start">
+														<span class="date">22.09.2019</span>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="pages">
+								<div class="row no-gutters">
+									<div class="col-7 col-md-4 col-lg-3">
+										<div class="visible">
+											<span class="gray bold px16">Показано 100 из 1000</span>
+										</div>
+									</div>
+									<div class="col-5 col-md-2">
+										<div class="all-visible">
+											<a class="underline semibold" href="">Показать все</a>
+										</div>
+									</div>
+									<div class="col-6 offset-1 col-md-2 offset-md-2 offset-lg-3 d-flex justify-content-end">
+										<div class="list-pages">
+											<a href="#"><i class="fa fa-sort-desc accent left" aria-hidden="true"></i></a>
+											<a href="#" class="accent bold">1</a>
+											<a href="#" class="gray px12">2</a>
+											<a href="#" class="gray px12">3</a>
+											<a href="#" class="gray px12">4</a>
+											<a href="#"><i class="fa fa-sort-desc accent right" aria-hidden="true"></i></a>	
+										</div>
+									</div>
+									<div class="col-2 col-md-1">
+										<div class="input-pages">
+											<input type="text">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="my-footer">
+			<footer>
+				<div class="container">
+					<div class="row">
+
+					</div>
+				</div>
+			</footer>
+		</div>
+ </div>
+
+	
+
+	
+
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/mmenu/mmenu.js"></script>
+
+</body>
+</html>

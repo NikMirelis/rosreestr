@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Create-order</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="humburger d-block d-md-none">
+		<a href="#personal-info"><i class="fa fa-bars" aria-hidden="true"></i></a>
+	</div>
+
+	<div id="my-page">
+		<div id="my-header">
+			<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-3">
+							<div class="logo d-flex justify-content-center align-self-center">
+								<a class="uppercase bold px21 white" href="/">Rosreestr.net</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-5 col-lg-4 offset-lg-2">
+							<div class="text-supp d-flex justify-content-center align-self-center">
+								<span class="px16 gray semibold">Тех поддержка: <a href="mailto:info@rosreestr.net">info@rosreestr.net</a></span>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3">
+							<div class="personal-account d-flex justify-content-center align-self-center">
+								<a class="white semibold px16" href="">Личный кабинет</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<nav id="all-services-button">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="all-services d-lg-none">
+								<a href="#all-services">Все услуги</a>
+							</div>
+							<div class="humburger d-none d-md-block d-lg-none">
+								<a href="#personal-info"><i class="fa fa-bars" aria-hidden="true"></i></a>
+							</div>
+							<ul class="d-none d-lg-flex justify-content-between desctop-menu">
+								<li><a href="#">Выписка из ЕГРН</a></li>
+								<li><a href="#">Проверка участка</a></li>
+								<li><a href="#">Проверка квартиры</a></li>
+								<li><a href="#">Кадастровая стоимость</a></li>
+								<li><a href="#">Кадастровая карта</a></li>
+								<li><a href="#">Ответы на вопросы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			<nav id="all-services">
+				<ul class="">
+					<li class="d-flex justify-content-center">
+						<a href="#">Выписка из ЕГРН</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Проверка участка</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Проверка квартиры</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Кадастровая стоимость</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Кадастровая карта</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Ответы на вопросы</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav id="personal-info">
+				<ul class="">
+					<li class="d-flex justify-content-center ">
+						<a href="index.html">Баланс</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Создать заказ</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="my-orders-status.html">Мои заказы</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="setting.html">Настройки</a>
+					</li>
+					<li class="d-flex justify-content-center">
+						<a href="#">Выход</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+		<div id="my-content">	
+			<section id="create-order">
+				<div class="container">
+					<div class="row">
+						<div class="col-3 d-none d-lg-block">
+							<nav id="personal-info-dectop">
+								<div class="row">
+									<div class="col-12">
+										<div class="number">
+											<span class="bold px18">
+												+7 900 900 90 90
+											</span>
+										</div>
+										<div class="balance">
+											<span class="semibold px16">Баланс:</span><span class="bold px16">1200 р.</span>
+										</div>
+									</div>
+								</div>
+								<ul class="">
+									<li class="d-flex justify-content-start">
+										<a class="semibold px16" href="index.html">Баланс</a>
+									</li>
+									<li class="d-flex justify-content-start selected">
+										<a class="semibold px16" href="#">Создать заказ</a>
+									</li>
+									<li class="d-flex justify-content-start">
+										<a class="semibold px16" href="my-orders-status.html">Мои заказы</a>
+									</li>
+									<li class="d-flex justify-content-start">
+										<a class="semibold px16" href="setting.html">Настройки</a>
+									</li>
+									<li class="d-flex justify-content-start">
+										<a class="semibold px16" href="#">Выход</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-12 col-lg-9">
+							<div class="row">
+								<div class="col-12">
+									<div class="title">
+										<span class="bold px22">
+											Создание заказа
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<div class="search-numbers">
+										<div class="row">
+											<div class="col-12">
+												<div class="title">
+													<span class="bold px22">Создание заказа</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="d-flex justify-content-center">
+													<a href="javascript:;">
+														<span class="px18 bold semidark">
+															Поиск объектов
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-8">
+												<div class="d-flex justify-content-start">
+													<a href="">
+														<span class="link px14 bold semidark">
+															По кадастрвоому номеру
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-12 col-md-4">
+												<div class="d-flex justify-content-start">
+													<a href="javascript:;">
+														<span class="link px14 bold semidark selected">
+															По адресу
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="code-mirror">
+													<input type="text" placeholder="Введите адрес">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="button-adress d-flex justify-content-center">
+													<button class="button white semibold px16">
+														Выполнить поиск по адресу
+													</button>
+												</div>
+												<hr>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="result-search">
+													<span class="bold px22">Результат поиска</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-2">
+												<div class="checkbox d-flex align-items-center">
+													<input type="checkbox">
+												</div>
+											</div>
+											<div class="col-5">
+												<span>Кад. номер</span>
+											</div>
+											<div class="col-5">
+												<span>Адрес</span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="choose-title">
+													<span class="bold px22">
+														Выбор документов
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="choose-docs">
+													<div class="row">
+														<div class="col-2">
+															<div class="checkbox d-flex align-items-center">
+																<input type="checkbox">
+															</div>
+														</div>
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">Основные характеристики права</span>
+														</div>
+														<div class="col-3">
+															<div class="price d-flex align-items-center">
+																<span class="bold">100 р.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="choose-docs">
+													<div class="row">
+														<div class="col-2">
+															<div class="checkbox d-flex align-items-center">
+																<input type="checkbox">
+															</div>
+														</div>
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">Об объекте недвижимости</span>
+														</div>
+														<div class="col-3">
+															<div class="price d-flex align-items-center">
+																<span class="bold">100 р.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="choose-docs">
+													<div class="row">
+														<div class="col-2">
+															<div class="checkbox d-flex align-items-center">
+																<input type="checkbox">
+															</div>
+														</div>
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">Переход прав</span>
+														</div>
+														<div class="col-3">
+															<div class="price d-flex align-items-center">
+																<span class="bold">100 р.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="choose-docs">
+													<div class="row">
+														<div class="col-2">
+															<div class="checkbox d-flex align-items-center">
+																<input type="checkbox">
+															</div>
+														</div>
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">Кадастровая стоимость</span>
+														</div>
+														<div class="col-3">
+															<div class="price d-flex align-items-center">
+																<span class="bold">100 р.</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="button-ready d-flex justify-content-center">
+													<button class="button white semibold px16">
+														Готово
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="bg-border detaild-orders">
+										<div class="row">
+											<div class="col-12">
+												<div class="title-details">
+													<div class="span bold px22">
+														Детали заказа
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-6">
+												<span class="gray semibold px12">
+													Документы
+												</span>
+											</div>
+											<div class="col-3">
+												<div class="count d-flex justify-content-end align-items-center">
+													<span class="gray semibold px12">
+														Кол-во
+													</span>
+												</div>
+											</div>
+											<div class="col-3">
+												<div class="price d-flex justify-content-end align-items-center">
+													<span class="gray semibold px12">
+														Стоимость
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="document-right">
+													<div class="row">
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">
+																Основные характеристики и права
+															</span>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-start">
+																<span class="px14">0</span>
+															</div>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-end">
+																<span class="px14">0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="document-right">
+													<div class="row">
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">
+																Об объекте недвижимости
+															</span>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-start">
+																<span class="px14">0</span>
+															</div>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-end">
+																<span class="px14">0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="document-right">
+													<div class="row">
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">
+																Переход прав на объект
+															</span>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-start">
+																<span class="px14">0</span>
+															</div>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-end">
+																<span class="px14">0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="document-right">
+													<div class="row">
+														<div class="col-7">
+															<span class="px8 md-px10 lg-px12">
+																Кадастровая стоимость
+															</span>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-start">
+																<span class="px14">0</span>
+															</div>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-end">
+																<span class="px14">0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="document-right">
+													<div class="row">
+														<div class="col-7">
+															<span class="px12 lg-px16 semibold gray">
+																Итого
+															</span>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-start">
+																<span class="px14 bold">0</span>
+															</div>
+														</div>
+														<div class="col-2">
+															<div class="d-flex justify-content-end">
+																<span class="px14 bold">0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="comment">
+													<textarea name="comment" id="comment" placeholder="Комментарий к заказу"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-6">
+												<div class="draft">
+													<div class="button-draft d-flex justify-content-center">
+														<button class="button white semibold px16">
+															В черновик
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="inwork">
+													<div class="button-work d-flex justify-content-center">
+														<button class="button white semibold px16">
+															В работу
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<hr>
+										<div class="row">
+											<div class="col-12">
+												<div class="title-choose-objects">
+													<span class="bold px22">Выбранные объекты недвижимости</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-5">
+												<div class="cad-number">
+													<span>Кад. номер</span>
+												</div>
+											</div>
+											<div class="col-7">
+												<div class="cad-number d-flex justify-content-center">
+													<span>Адрес</span>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="non-objects d-flex justify-content-center">
+													<span class="px20 red semibold">Объекты не выбраны</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="my-footer">
+			<footer>
+				<div class="container">
+					<div class="row">
+
+					</div>
+				</div>
+			</footer>
+		</div>
+ </div>
+
+	
+
+	
+
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/mmenu/mmenu.js"></script>
+
+</body>
+</html>
